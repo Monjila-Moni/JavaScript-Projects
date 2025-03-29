@@ -1,0 +1,8 @@
+#css-image {
+    border: 4px solid green;
+}
+
+/* this is a attribute selector */
+[alt="javascript roadmap"]{
+    border: 4px solid hotpink;
+}
