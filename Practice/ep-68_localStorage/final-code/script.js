@@ -1,4 +1,4 @@
-const nameElement = document.querySelector('.name-tag')
+ const nameElement = document.querySelector('.name-tag')
 const nameInput = document.querySelector('.name')
 const ageElement = document.querySelector('.age-tag')
 const ageInput = document.querySelector('.age')

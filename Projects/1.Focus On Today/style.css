@@ -67,7 +67,11 @@ main{
     display: flex;
     align-items: center;
     overflow: hidden;
-    
+    transition: width 0.5s ease-in-out;  /* Smooth transition */
+}
+.progress-value span{
+    min-width: max-content;
+    /* padding: 20px; */
 }
 
 .error-label{
