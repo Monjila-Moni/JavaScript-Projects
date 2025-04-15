@@ -1,10 +1,16 @@
-const image = document.querySelector('img')
-const button = document.querySelector('button')
+const btn = document.querySelector('button')
+const img = document.querySelector('img')
 
-button.addEventListener('click', () => {
-  fetch('https://dog.ceo/api/breeds/image/random')
-    .then((response) => response.json())
-    .then((json) => {
-      image.src = json.message
-    })
+btn.addEventListener('click', () =>{
+  const xhr = new XMLHttpRequest()
+  xhr.responseType = 'json'
+xhr.addEventListener('load',()=>
+{
+  img.src = xhr.response.message
+  console.log(xhr)
+})
+xhr.open('GET', "https://dog.ceo/api/breeds/image/random")
+
+xhr.send()
+
 })
