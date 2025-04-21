@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    font-family: sans-serif;
+    /* background-color: black; */
+
+    padding: 32px;
+}
+
+h1{
+    font-size: 4rem;
+}
+span{
+    display: inline-flex;
+    align-items: center;
+    color: brown;
+}
+
+span::after{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    background-color: brown;
+    margin-left: 4px;
+}
+
+h1 span::after {
+    height: 55px;
+}
+
+h2 span::after {
+    height: 24px;
+}
