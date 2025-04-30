@@ -1,11 +1,57 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body>
-    
-  </body>
-  </html>
+    <title>Countries API</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <p>Where in the world?</p>
+            <p class="theme-changer"><i class="fa-regular fa-moon"> &nbsp;&nbsp;</i> <span>Dark Mode</span></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-filter-container">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+               <input type="text" placeholder="Search for a country...">
+            </div>
+            <select class="filter-by-region">
+                <option value="" disabled selected hidden>Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+       </div>
+        <div class="countries-container">
+            <!-- <a class="country-card">
+                <div class="country-img">
+                    <img src="https://cdn.pixabay.com/photo/2020/02/21/05/49/bangladesh-4866534_1280.png" alt="">
+                </div>
+                <div class="country-content">
+                    <h2 class="country-name">Bangladesh</h2>
+                    <p><b>Population: </b><span>100023</span></p>
+                    <p><b>Region: </b><span>Asia</span></p>
+                    <p><b>Capital: </b><span>Dhaka</span></p>
+                </div>
+            </a> -->
+
+        
+        </div>
+    </main>
+</body>
+
+</html>
