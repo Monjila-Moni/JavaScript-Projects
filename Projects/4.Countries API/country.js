@@ -98,3 +98,26 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
 
 
   });
+
+
+
+  //theme-changer
+
+const themeChanger = document.querySelector('.theme-changer')
+const themeChangerText = document.querySelector('.theme-changer span')
+const themeChangerIcon = document.querySelector('.theme-changer i')
+
+themeChanger.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+
+  if (document.body.classList.contains('dark')) {
+    themeChangerIcon.classList.remove('fa-moon');
+    themeChangerIcon.classList.add('fa-sun');
+    themeChangerText.innerText = "White Mode"
+    
+  } else {
+    themeChangerIcon.classList.remove('fa-sun');
+    themeChangerIcon.classList.add('fa-moon');
+    themeChangerText.innerText = "Dark Mode"
+  }
+});

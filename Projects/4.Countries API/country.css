@@ -3,10 +3,29 @@
 }
 
 body {
+  --background-color: white;
+  --text-color:black;
+  --elements-color: white;
   margin: 0;
   font-family: "Nunito", sans-serif;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
+body.dark{
+  --background-color: hsl(207,26%,17%);
+--text-color:white;
+--elements-color: hsl(209, 23%, 22%);
+}
+
+.header-content p a{
+  text-decoration-line: none;
+  color: var(--text-color);
+}
+.header-content p a:hover{
+  background-color: #b3a4a4;
+}
 header {
   position: sticky;
   top: 0;
@@ -15,6 +34,8 @@ header {
   font-size: 18px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding-inline: 64px;
+  background-color: var(--elements-color);
+  color: var(--text-color);
 }
 
 .header-content {
@@ -41,10 +62,11 @@ main {
   padding-block: 8px;
   border-radius: 8px;
   cursor: pointer;
+  background-color: var(--elements-color);
 }
 
 .back-button:hover {
-  background-color: #f0f0f0;
+  background-color: #b3a4a4;
 }
 
 .country-img-area {
@@ -96,12 +118,11 @@ main {
   cursor: pointer;
   text-decoration-line: none;
   align-items: center;
-  color: black;
+  color: var(--text-color);
+  background-color: var(--elements-color);
+
 }
 
-a:hover {
-  background-color: #f0f0f0;
-}
 
 /* shimmer effect */
 
